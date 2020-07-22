@@ -106,10 +106,16 @@ section {
   color: #FFFFFF;
 }
 
+.navbar-brand a:focus, .navbar-brand a:hover {
+	text-decoration: none;
+}
+
+
 #header-nav {
-  border: 0;
-  background-color: black;
-  color: #FFFFFF;
+	background-color: black;
+	border-radius: 0;
+	border: 0;
+	color: white;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
