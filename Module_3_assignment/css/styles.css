@@ -5,18 +5,18 @@
 }
 
 h1 {
-	font-family: Brushstroke, fantasy;
+	font-family: goth, fantasy;
 	color: #000000;
 }
 
 body {
 	
-	background-color: #990012;
+	background-color: #800000;
 
 }
 
 p {
-	padding: 10px;
+	padding: 11px;
 	margin: 0;
 }
 
@@ -26,7 +26,6 @@ p {
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	padding: 10px;
 }
 
 section {
@@ -38,67 +37,52 @@ section {
 	color: black;
 	position: relative;
 	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#hilsha {
-	border: 1px solid black;
+.row {
+	position: relative;
+}
+
+.row > div > article {
+	background-color: white;
+	text-align: justify;
+	margin-bottom: 20px;
+	color: black;
+}
+
+#chicken {
+	
 	text-align: center;
-	width: 30%;
-	margin-left: 70%;
 	font-family: Georgia,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
-	padding: 5px;
-	background-color: black;
+	margin-left: 70%
+	padding: 1px;
 	color: #FFFF00;
 }
 
-#biryani {
-	border: 1px solid black;
+#beef {
 	text-align: center;
-	width: 30%;
-	margin-left: 70%;
 	font-family: Georgia,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
-	padding: 5px;
-	background-color: black;
+	margin-left: 70%
+	padding: 1px;
 	color: #FFFF00;
 }
 
-#chingri {
-	border: 1px solid black;
+#sushi{
 	text-align: center;
-	width: 30%;
-	margin-left: 70%;
 	font-family: Georgia,sans-serif;
-	font-weight: bold;
-	font-size: 125%;
 	margin-bottom: 0;
 	margin-top: 0;
-	background-color: black;
+	margin-left: 70%
+	padding: 1px;
 	color: #FFFF00;
-	padding: 5px;
 }
 
-#hilsha-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#biryani-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#chingri-div {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
 
 .navbar-brand p {
   font-size: 2em;
@@ -147,9 +131,53 @@ hr {
   font-size: 1.2em;
 }
 
+@media (min-width: 1200px) {
+#header-nav {
+  height: 70px;
+}
+.navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+    border-bottom: 20px;
+    } 
+}
+
+/* end header */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+#header-nav {
+    padding-top: 10px;
+    height: 70px; 
+    }  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-nav {
+    padding-top: 10px;
+    height: 70px; 
+    }
+  }
+  }
+/********** Extra small devices only **********/
+
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+  }
+
+  .navbar-brand h1 { /* Company's name */
+    padding-top: 10px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+}
+
 @media (max-width: 767px) {
 	.row > div > article {
-		width: 80%;
-		margin: 20px auto 0;
+		width: 100%;
+		margin: 0 auto 20px;
 	}
 }
